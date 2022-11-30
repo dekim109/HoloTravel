@@ -1,0 +1,4 @@
+repository "2022_XR_HoloTravel@Chonnam_National_University_CaLT_Lab@cloud"
+  path "/"
+    br "/main"
+    co "/main"

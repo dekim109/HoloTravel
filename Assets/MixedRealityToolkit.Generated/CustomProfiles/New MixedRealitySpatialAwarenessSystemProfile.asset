@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f279aded72cb741b4de89a54359dd4, type: 3}
+  m_Name: New MixedRealitySpatialAwarenessSystemProfile
+  m_EditorClassIdentifier: 
+  isCustomProfile: 1
+  observerConfigurations:
+  - componentType:
+      reference: Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver,
+        Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality
+    componentName: Windows Mixed Reality Spatial Mesh Observer
+    priority: 0
+    runtimePlatform: 8
+    observerProfile: {fileID: 11400000, guid: 8be0bcd2117dd214da41ed98f0def2e3, type: 2}
+  - componentType:
+      reference: Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver,
+        Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality
+    componentName: XR SDK Windows Mixed Reality Spatial Mesh Observer
+    priority: 0
+    runtimePlatform: 9
+    observerProfile: {fileID: 11400000, guid: 39f079c14e4bb0c48b76e012ce45c64a, type: 2}
+  - componentType:
+      reference: Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver,
+        Microsoft.MixedReality.Toolkit.Providers.XRSDK
+    componentName: XR SDK Spatial Mesh Observer
+    priority: 0
+    runtimePlatform: 2039
+    observerProfile: {fileID: 11400000, guid: 8569a5cba626ca64a94b803d1fb00279, type: 2}
+  - componentType:
+      reference: Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver,
+        Microsoft.MixedReality.Toolkit.Providers.OpenXR
+    componentName: OpenXR Spatial Mesh Observer
+    priority: 0
+    runtimePlatform: 9
+    observerProfile: {fileID: 11400000, guid: e27a530bff90f9a4a81ec133e3f4174d, type: 2}
